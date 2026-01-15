@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
@@ -25,3 +26,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn {
+  @apply bg-gray-200 rounded-xl font-bold hover:shadow-2xl hover:shadow-white hover:transform-[scale(1.05)] duration-200 text-black cursor-pointer active:bg-white relative z-10 px-4 py-3 active:shadow active:transform-[scale(1.05)]
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 4s ease-in-out infinite;
+}
