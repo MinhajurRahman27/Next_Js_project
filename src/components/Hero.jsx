@@ -5,10 +5,10 @@ const Hero = () => {
 
   
   return (
-    <div className="flex relative justify-around gap-10 pt-54 ">
+    <div className="flex relative justify-around gap-10 pt-54 mb-30">
      
       <div className=" w-[600px]">
-        <div className="  text-7xl  text-indigo-600 ">
+        <div className="  text-7xl  text-indigo-500 ">
       AK 47
       </div>
      <span className="text-gray-500 font-light">

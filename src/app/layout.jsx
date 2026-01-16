@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
 import "./globals.css";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ const RootLayout = ({ children }) => {
         <header className="fixed top-0 backdrop-blur-md left-0 right-0 z-50  py-5 flex items-center justify-between p-5  bg-white/10 
                border border-white/20 
                transition-all duration-300">
-          <Link href={"/"} className="flex items-center">
+          <Link href={"/"} className="flex items-center gap-1">
             <Image
               src="/logo.png"
               alt="Picture of the author"
@@ -38,7 +38,7 @@ const RootLayout = ({ children }) => {
               height={35}
               className="rounded-xl"
             />
-            <h1 className="text-3xl ">SKEDOSH</h1>
+            <h1 className="text-3xl font-bold text-indigo-500">AK47</h1>
           </Link>
 
           <div className="flex space-x-4 mr-20 text-white font-semibold">
@@ -80,6 +80,7 @@ const RootLayout = ({ children }) => {
           </div>
         </header>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
