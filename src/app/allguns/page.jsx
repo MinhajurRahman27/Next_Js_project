@@ -3,7 +3,7 @@ import ProductCard from '@/components/ProductCard';
 import React from 'react';
 
 const getData = async()=>{
-  const res = await fetch("http://localhost:5000/data")
+  const res = await fetch(`${process.env.NEXT_PUBLIC_server}/api/data`)
   const data = await res.json()
   return data
 }
