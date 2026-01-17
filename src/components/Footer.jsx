@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-black to-indigo-950/30 border-t border-indigo-500/30 py-12 px-8">
+    <footer className="bg-black border-t border-indigo-500/30 py-12 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
@@ -44,6 +44,14 @@ const Footer = () => {
                 <Link href="/howitworks" className="text-gray-400 hover:text-indigo-300 transition-colors duration-300">
                   How It Works
                 </Link>
+              </li>
+              <li>
+                 <Link
+                            href="/dashboard"
+                            className='text-gray-400 hover:text-indigo-300 transition-colors duration-300'
+                          >
+                            Dashboard
+                          </Link>
               </li>
             </ul>
           </div>
