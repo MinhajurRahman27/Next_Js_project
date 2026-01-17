@@ -34,12 +34,12 @@ export default function DashboardPage() {
             <h1 className="text-4xl font-bold text-white mb-2">Dashboard</h1>
             <p className="text-gray-400">Welcome back, {session.user?.name || session.user?.email}</p>
           </div>
-          <button
+          {/* <button
             onClick={() => signOut({ callbackUrl: "/" })}
             className="bg-red-500/20 hover:bg-red-500/30 text-red-400 px-6 py-3 rounded-2xl font-semibold transition-all"
           >
             Sign Out
-          </button>
+          </button> */}
         </div>
 
         {/* Stats Grid */}
@@ -77,7 +77,7 @@ export default function DashboardPage() {
               onClick={() => router.push("/allguns")}
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-4 rounded-xl font-semibold transition-all text-left"
             >
-              <div className="text-lg mb-1">Browse All Guns</div>
+              <div className="text-lg mb-1">Browse All Parts</div>
               <div className="text-sm text-gray-400">View complete collection</div>
             </button>
             
@@ -100,7 +100,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-6 border border-white/20">
+        {/* <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-6 border border-white/20">
           <h2 className="text-2xl font-bold text-white mb-4">Recent Activity</h2>
           <div className="space-y-4">
             <div className="flex items-center justify-between py-3 border-b border-white/10">
@@ -127,7 +127,7 @@ export default function DashboardPage() {
               <div className="text-blue-400 text-sm">View Details</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
