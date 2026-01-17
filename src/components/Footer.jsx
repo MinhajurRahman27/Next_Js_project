@@ -89,16 +89,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="mailto:info@ak47.com" className="text-gray-400 hover:text-indigo-300 transition-colors duration-300">
-                  info@ak47.com
+                 minhajurrahman2716@gmail.com
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-gray-400 hover:text-indigo-300 transition-colors duration-300">
-                  +1 (234) 567-890
+                  +880 1847901009
                 </a>
               </li>
             </ul>
-            <div className="flex gap-4 mt-4">
+            {/* <div className="flex gap-4 mt-4">
               <a 
                 href="https://twitter.com" 
                 target="_blank" 
@@ -123,7 +123,7 @@ const Footer = () => {
               >
                 <span className="text-indigo-300">📷</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -132,7 +132,7 @@ const Footer = () => {
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} AK47 Info. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
+          {/* <div className="flex gap-6 text-sm">
             <Link href="/privacy" className="text-gray-500 hover:text-indigo-300 transition-colors duration-300">
               Privacy Policy
             </Link>
@@ -142,7 +142,7 @@ const Footer = () => {
             <Link href="/contact" className="text-gray-500 hover:text-indigo-300 transition-colors duration-300">
               Contact
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
