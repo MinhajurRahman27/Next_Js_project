@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Title from '@/components/Title';
 import ProductCard from '@/components/ProductCard';
 import React from 'react';
