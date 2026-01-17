@@ -1,8 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-//   pages: {
-//   signIn: "/login",
-// }
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.istockphoto.com",
+      },
+      {
+      protocol: "https",
+      hostname: "www.shutterstock.com",
+    },
+    ],
+  },
+  
 };
-
 export default nextConfig;

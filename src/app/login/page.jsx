@@ -26,7 +26,7 @@ export default function LoginPage() {
         setError("Invalid email or password");
         setLoading(false);
       } else if (result?.ok) {
-        router.push("/");
+        router.push("/allguns");
         router.refresh();
       }
     } catch (error) {

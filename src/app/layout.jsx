@@ -4,6 +4,8 @@ import "./globals.css";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
+import NextAuthProvider from "@/provider/NextAuthProvider";
+import ResponsiveNavbar from "@/components/ResponsiveNavbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,67 +24,18 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
+    <NextAuthProvider>
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body className="">
-        <header className="fixed top-0 backdrop-blur-md left-0 right-0 z-50  py-5 flex items-center justify-between p-5  bg-white/10 
-               border border-white/20 
-               transition-all duration-300">
-          <Link href={"/"} className="flex items-center gap-1">
-            <Image
-              src="/logo.png"
-              alt="Picture of the author"
-              width={35}
-              height={35}
-              className="rounded-xl"
-            />
-            <h1 className="text-3xl font-bold text-indigo-500">AK47</h1>
-          </Link>
-
-          <div className="flex space-x-4 mr-20 text-white font-semibold">
-            <Link
-              href="/"
-              className="px-4 py-2 rounded-xl bg-white/10 
-               border border-white/20 hover:bg-white/20
-               transition-all duration-300"
-            >
-              Home
-            </Link>
-
-            <Link
-              href="/allguns"
-              className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md
-               border border-white/20 hover:bg-white/20
-               transition-all duration-300"
-            >
-              Guns
-            </Link>
-
-            <Link
-              href="/howitworks"
-              className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md
-               border border-white/20 hover:bg-white/20
-               transition-all duration-300"
-            >
-              How It Works
-            </Link>
-          </div>
-
-          <div>
-            <Link href={"/login"}>
-              {" "}
-              <button className="btn bg-linear-to-r from-red-200 to-pink-600">
-                Login
-              </button>{" "}
-            </Link>
-          </div>
-        </header>
+        <ResponsiveNavbar />
         <main>{children}</main>
         <Footer />
       </body>
     </html>
+    </NextAuthProvider>
   );
 };
 
