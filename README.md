@@ -1,4 +1,6 @@
 # 🔫 AK-47 Parts Catalog – Next.js Project
+<img width="1346" height="542" alt="d" src="https://github.com/user-attachments/assets/6a6e3e9c-9399-46ee-b30c-447b72cc8d31" />
+
 <img width="1336" height="600" alt="Capturdsfe" src="https://github.com/user-attachments/assets/9c0adf52-ca68-427a-8406-1e742bed8e6d" />
 
 
