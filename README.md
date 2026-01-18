@@ -1,4 +1,6 @@
 # 🔫 AK-47 Parts Catalog – Next.js Project
+<img width="1336" height="600" alt="Capturdsfe" src="https://github.com/user-attachments/assets/9c0adf52-ca68-427a-8406-1e742bed8e6d" />
+
 
 Alhamdulillah! This is my **first production-ready Next.js project**, built to practice real-world frontend concepts such as routing, authentication, API handling, and deployment.
 
